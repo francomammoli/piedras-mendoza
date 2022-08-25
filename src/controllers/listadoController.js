@@ -1,13 +1,7 @@
 const listadoController = {
-    fullstack:(req,res)=>{
-            res.render('fullstack')
-    },
-    backend:(req,res)=>{
-        res.render('backend')
-    },
-    frontend:(req,res)=>{
-        res.render('frontend')
-    },
+    home:(req,res)=>{
+            res.render('home')
+    }
 }
 
 module.exports = listadoController;
