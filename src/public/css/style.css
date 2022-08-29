@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Oswald:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
 /* reset */
 *{
     box-sizing: border-box;
@@ -13,13 +12,15 @@
 
 html{
     scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
 }
 
 body{
     margin: 0;
     overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
 }
 
 ol, ul {
@@ -39,4 +40,81 @@ a{
 img{
     max-width: 100%;
     height: auto;
+}
+
+/* header */
+header{
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
+    background-color: #fff;
+}
+
+.nav-container{
+    display: flex;
+    max-width: 1368px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 62px;
+}
+
+.ul-menu{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-container-redes{
+    display: flex;
+    gap: 8px;
+}
+
+.a-menu{
+    color: #18191F;
+    font-size: 16px;
+}
+
+/* footer */
+.main-footer{
+    display: flex;
+    background-color: #0B0D17;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100% ;
+}
+
+.div-footer p{
+    color: #fff;
+}
+
+
+/* home */
+.section-home-main{
+    width: 100vw;
+    height: 90vh;
+    background-color: #CDCED2;
+}
+.section-home{
+    max-width: 1368px;
+    margin: auto;
+}
+
+
+.section-home h1{
+    color: #1C2737;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 98px;
+}
+
+.section-home h1 b{
+    color: #CFA015;
+    font-size: 96px;
+    font-weight: 800;
+}
+
+.section-home p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #18191F;
 }
