@@ -12,11 +12,13 @@
 
 html{
     scroll-behavior: smooth;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body{
+    font-family: 'Inter', sans-serif !important;
     margin: 0;
     overflow-x: hidden;
     position: relative;
@@ -46,6 +48,7 @@ img{
 header{
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
     background-color: #fff;
+    font-family: 'Inter', sans-serif !important;
 }
 
 .nav-container{
@@ -72,6 +75,38 @@ header{
     font-size: 16px;
 }
 
+.divredes{
+    justify-content: flex-end;
+}
+.redes.me-auto{
+    margin-right: 0 !important;
+}
+
+.collapse.navbar-collapse.logo{
+    justify-content: center;
+}
+.show.logo{
+    display: none;
+}
+
+.logo-mobile{
+    display: none;
+}
+
+.navbar{
+    max-width: 1368px;
+    margin: auto;
+}
+
+.img-logo-desktop{
+    max-width: 80px !important;
+}
+
+.a-logo{
+    padding: 0px;
+    margin: 0px;
+}
+
 /* footer */
 .main-footer{
     display: flex;
@@ -80,14 +115,41 @@ header{
     position: absolute;
     bottom: 0;
     width: 100% ;
+    justify-content: center;
 }
 
-.div-footer p{
+
+footer{
+    font-family: 'Inter', sans-serif !important;
+}
+
+.svg-instagram,
+.svg-facebook{
+    width: 1.5rem;
+}
+
+.div-redes{
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.div-footer p
+{
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0px;
     color: #fff;
+    margin:0;
+    padding: 10px 0px;
+}
+/* home */
+.com-h1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-
-/* home */
 .section-home-main{
     width: 100vw;
     height: 90vh;
@@ -96,6 +158,10 @@ header{
 .section-home{
     max-width: 1368px;
     margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -118,3 +184,221 @@ header{
     line-height: 32px;
     color: #18191F;
 }
+
+.section-home .btn-servicios{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 18px;
+    background-color: #CFA015;
+    border-radius: 6px;
+    max-width: 185px;
+}
+
+.fondo-home{
+    background-color: #CFA015;
+    width: 400px;
+    height: 400px;
+    transform: rotate(45deg);
+    margin-right: -300px;
+    position: absolute;
+    right: 0;
+}
+/* section nosotros */
+.section-nosotros{
+    background-color: #F5F5F5;
+    max-height: 60vh;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.main-nosotros{
+    max-width: 1368px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.texto-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-nosotros{
+    font-weight: 600;
+}   
+
+/* slider */
+.img-slider{
+    max-height: 50vh;
+    max-width: 400px;
+    border-radius: 12px;
+    margin: 24px;
+}
+
+
+.carousel-indicators
+{
+    margin-bottom: 0px !important;
+}
+.carousel-indicators 
+button{
+    border-radius: 100% !important;
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #CDCED2 !important;
+}
+
+.carousel-indicators 
+.active{
+    background-color: #CFA015 !important;
+}
+
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='gold'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='gold'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+/* section servicios */
+.section-servicios{
+    height: 90vh;
+    background-color: #fff;
+    max-width: 1368px;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.servicios-titulo{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: center;
+    background: url(http://www.concremax.cl/wp-content/uploads/2021/01/home_fix_underline-2.png) no-repeat bottom center;
+    padding-bottom: 20px;
+}
+
+.h4-servicios{
+    text-align: center;
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 300;
+    letter-spacing: 0px;
+}
+
+.hr-servicios{
+    margin: 0 auto 15px;
+    background: none;
+    color: transparent;
+}
+
+.main-servicios{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.img-servicios{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card{
+    margin: 0 1% 40px;
+    border: none !important;
+}
+
+.card h3{
+    font-size: 27px;
+    line-height: 34px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.card
+p{
+    text-align: center;
+}
+/* section contacto */
+.section-contacto{
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/parralax.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-contacto{
+    max-width: 1368px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.contenido-contacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-contacto
+h2{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main-contacto
+h3{
+    border-width: 10px 0;
+    border-style: solid;
+    border-color: #ff9f00;
+    color: #fff;
+    padding: 7px 0;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 27px;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.mapa-ifrem{
+    max-width: 90%;
+    max-height: 40vh;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE  */
+
+@media screen and (max-width:991px)  {
+    .logo-mobile{
+        display: block;
+    }
+}
+
