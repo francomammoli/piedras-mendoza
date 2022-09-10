@@ -49,6 +49,9 @@ header{
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
     background-color: #fff;
     font-family: 'Inter', sans-serif !important;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
 .nav-container{
@@ -148,6 +151,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-left: 40px;
 }
 
 .section-home-main{
@@ -209,15 +213,14 @@ footer{
 /* section nosotros */
 .section-nosotros{
     background-color: #fff;
-    max-height: 60vh;
-    padding-top: 70px;
-    padding-bottom: 40px;
+    padding: 70px 0px;
 }
 
 .main-nosotros{
     max-width: 1368px;
     display: grid;
     grid-template-columns: 60% 40%;
+    margin:auto;
 }
 
 .texto-nosotros{
@@ -285,13 +288,13 @@ button{
 /* section servicios */
 .section-servicios{
     background-color: #F5F5F5;
-    padding-top: 70px;
+    padding: 70px 0px;
 }
 
 .contenedor-servicio{
     max-width: 1368px;
     margin: auto;
-    height: 90vh;
+    height: auto;
 }
 
 .servicios-titulo{
@@ -321,6 +324,7 @@ button{
 .main-servicios{
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    margin-top: 60px;
 }
 
 .img-servicios{
@@ -352,7 +356,7 @@ p{
 }
 /* section contacto */
 .section-contacto{
-    height: 80vh;
+    height: 700px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/parralax.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -371,6 +375,8 @@ p{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 40px;
+    margin-left: 40px;
 }
 
 .main-contacto
@@ -406,7 +412,9 @@ h3{
 }
 
 
-
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
 
 
 
@@ -425,3 +433,150 @@ h3{
     }
 }
 
+/* 
+@media screen and (min-width:991px)  {
+    .logo-mobile{
+        display: block;
+    }
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    
+    h2 {
+        font-size: 34px !important;
+        line-height: 34px !important;
+        letter-spacing: 0px !important;
+    }
+
+    .card h3{
+        font-size: 23px;
+        line-height: 29px;
+        letter-spacing: 0px;
+    }
+
+}
+
+
+
+@media screen and (max-width:750px)  {
+    .section-home h1{
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .section-home h1 b{
+        font-size: 70px;
+    }
+
+    .fondo-home{
+        width: 300px;
+        height: 500px;
+    }
+
+    .section-home p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .img-servicios{
+        width: 200px;
+        height: 200px;
+    }
+
+    .h4-servicios{
+        font-size: 18px;
+    }
+
+    .card h3{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .main-contacto h3{
+        font-size: 19px;
+    }
+
+    .texto-nosotros{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:479px)  {
+
+    .fondo-home{
+        display: none;
+    }
+
+    .main-nosotros{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .texto-nosotros{
+        padding: 40px 40px 40px 50px;
+    }
+
+    .section-nosotros{
+        padding: 70px 0px 0px 0px;
+    }
+
+    .texto-nosotros h3{
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+
+    .p-nosotros-1, .p-nosotros{
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0px;
+    }
+
+    .servicios-titulo{
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+
+    .h4-servicios{
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0px;
+    }
+
+    .main-servicios{
+        grid-template-columns: 100%;
+    }
+
+    .img-servicios{
+        width: 250px;
+        height: 250px;
+    }
+
+    .card h3{
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+
+    .card p{
+        letter-spacing: 0px;
+        font-size: 13px;
+    }
+
+    .section-contacto{
+        height: auto;
+    }
+
+    .contenido-contacto{
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .mapa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 70px;
+    }
+}
