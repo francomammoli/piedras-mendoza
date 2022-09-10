@@ -208,7 +208,7 @@ footer{
 }
 /* section nosotros */
 .section-nosotros{
-    background-color: #F5F5F5;
+    background-color: #fff;
     max-height: 60vh;
     padding-top: 70px;
     padding-bottom: 40px;
@@ -223,19 +223,38 @@ footer{
 .texto-nosotros{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.texto-nosotros
+h3{
+    font-size: 27px;
+    line-height: 34px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    background: url(http://www.concremax.cl/wp-content/uploads/2021/01/home_fix_underline-2.png) no-repeat bottom center;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .p-nosotros{
     font-weight: 600;
 }   
 
+.p-nosotros-1{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
 /* slider */
 .img-slider{
-    max-height: 50vh;
-    max-width: 400px;
+    height: auto;
+    width: 488px;
     border-radius: 12px;
-    margin: 24px;
+    margin: auto;
 }
 
 
@@ -248,7 +267,7 @@ button{
     border-radius: 100% !important;
     width: 12px !important;
     height: 12px !important;
-    background-color: #CDCED2 !important;
+    background-color: #000000 !important;
 }
 
 .carousel-indicators 
@@ -265,11 +284,14 @@ button{
 }
 /* section servicios */
 .section-servicios{
-    height: 90vh;
-    background-color: #fff;
+    background-color: #F5F5F5;
+    padding-top: 70px;
+}
+
+.contenedor-servicio{
     max-width: 1368px;
     margin: auto;
-    padding-top: 70px;
+    height: 90vh;
 }
 
 .servicios-titulo{
@@ -313,6 +335,7 @@ button{
 .card{
     margin: 0 1% 40px;
     border: none !important;
+    background-color: transparent !important;
 }
 
 .card h3{
