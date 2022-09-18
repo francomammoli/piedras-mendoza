@@ -1,6 +1,6 @@
 const listadoController = {
     home:(req,res)=>{
-            res.render('home')
+            res.render('index')
     }
 }
 

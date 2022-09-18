@@ -7,7 +7,7 @@ app.set('port',process.env.PORT || 3000);
 app.use(express.static('./public'));
 //le aclaramos a express cual es el motor de plantillas que vamos a usar
 app.set('view engine','ejs');
-app.set('views','./public/views');
+app.set('views','./');
 
 
 //starting the server
